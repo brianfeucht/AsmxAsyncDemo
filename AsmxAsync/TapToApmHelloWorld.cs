@@ -35,8 +35,8 @@ namespace AsmxAsync
         private async Task<string> HellowWorldExceptionAsync()
         {
             var result = await HellowWorldAsync();
-
-            throw new Exception("Bleh.  I broke here");
+            
+            throw new Exception("Bleh.  I broke here. " + result);
         }
     }
 }
